@@ -8,7 +8,7 @@
                 <el-table-column type="expand">
                   <template slot-scope="props">
                     <el-form label-position="left" inline class="demo-table-expand">
-                      <el-form-item label="店铺名称">
+                      <el-form-item label="Task Name">
                         <span>{{ props.row.name }}</span>
                       </el-form-item>
                       <el-form-item label="店铺地址">
@@ -36,16 +36,16 @@
                   </template>
                 </el-table-column>
                 <el-table-column
-                  label="店铺名称"
-                  prop="name">
+                  label="Id"
+                  prop="id">
                 </el-table-column>
                 <el-table-column
-                  label="店铺地址"
-                  prop="address">
+                  label="Status"
+                  prop="status">
                 </el-table-column>
                 <el-table-column
-                  label="店铺介绍"
-                  prop="description">
+                  label="Processor"
+                  prop="processor">
                 </el-table-column>
                 <el-table-column label="操作" width="200">
                   <template slot-scope="scope">

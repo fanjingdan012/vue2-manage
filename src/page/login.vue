@@ -3,7 +3,7 @@
 	  	<transition name="form-fade" mode="in-out">
 	  		<section class="form_contianer" v-show="showLogin">
 		  		<div class="manage_tip">
-		  			<p>elm后台管理系统</p>
+		  			<p>Workflow Management</p>
 		  		</div>
 		    	<el-form :model="loginForm" :rules="rules" ref="loginForm">
 					<el-form-item prop="username">
@@ -13,7 +13,8 @@
 						<el-input type="password" placeholder="密码" v-model="loginForm.password"></el-input>
 					</el-form-item>
 					<el-form-item>
-				    	<el-button type="primary" @click="submitForm('loginForm')" class="submit_btn">登陆</el-button>
+				    	<el-button type="primary" @click="submitForm('loginForm')" class="submit_btn">Login</el-button>
+							<a type="primary" target="_blank" href="https://dpp-development.authentication.sap.hana.ondemand.com/oauth/authorize/?client_id=sb-clone-aca2e067-b1b0-4f0e-8480-bc2d72c1373b%21b1073%7Cworkflow%21b2746&redirect_uri=http%3A%2F%2Flocalhost%3A8002%2Fadmin%2Fauth&response_type=code" class="submit_btn">Auth</a>
 				  	</el-form-item>
 				</el-form>
 				<p class="tip">温馨提示：</p>
